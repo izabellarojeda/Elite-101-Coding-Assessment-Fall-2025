@@ -25,12 +25,13 @@ if not any(book.get('available', False) for book in library_books):
     #example for looking for available books
 if __name__ == "__main__":
         library_books: [ 
-        {{'id': 'B3', 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'available': True},
+       {{'id': 'B3', 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'available': True},
         {'id': 'B4', 'title': '1984', 'author': 'George Orwell', 'available': False},
         {'id': 'B2', 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee', 'available': True},
         {'id': 'B5', 'title': 'Pride and Prejudice', 'author': 'Jane Austen', 'available': True},
         {'id': 'B8', 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'available': False},
-        ]
+    ]
+print_available_books(library_books)
 
 
 
